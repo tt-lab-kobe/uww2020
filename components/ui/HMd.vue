@@ -1,13 +1,13 @@
 <template>
-  <div class="p-2">
+  <h2 class="text-2xl text-center">
     <slot></slot>
-  </div>
+  </h2>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
 export default Vue.extend({
-  name: 'Box',
+  name: 'HMd',
 })
 </script>
 

@@ -30,9 +30,7 @@
         </g>
       </svg>
     </div>
-    <div
-      class="absolute inset-0 text-center text-white md:mx-6 md:px-6 md:my-6 md:py-6"
-    >
+    <div class="absolute inset-0 text-center md:mx-6 md:px-6 md:my-6 md:py-6">
       <slot></slot>
     </div>
   </div>
