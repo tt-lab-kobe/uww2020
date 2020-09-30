@@ -23,7 +23,15 @@
         class="w-full lg:flex lg:items-center lg:w-auto"
       >
         <div v-for="(link, index) in links" :key="index">
+          <a
+            v-if="link.path === ''"
+            disabled
+            class="block mt-4 p-2 lg:inline-block lg:mt-0 text-gray-500 mr-4"
+          >
+            {{ link.name }}
+          </a>
           <nuxt-link
+            v-else
             :to="link.path"
             class="block mt-4 p-2 lg:inline-block lg:mt-0 text-gray-700 hover:bg-gray-300 mr-4"
           >
@@ -82,7 +90,7 @@ export default Vue.extend({
     links: {
       type: Array,
       required: true,
-      default: () => [{ name: 'Top', path: '/' }],
+      default: () => [{ name: 'Top', path: '' }],
     },
   },
   data: () => ({

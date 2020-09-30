@@ -1,70 +1,42 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">uww2020</h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+  <div>
+    <Hero :img-src="'/uww2020-topimage.jpg'">
+      <div>
+        <p class="font-mono">
+          <span class="text-5xl lg:text-6xl">U</span
+          ><span class="text-4xl lg:text-5xl">biquitous </span>
+          <span class="text-5xl lg:text-6xl">W</span
+          ><span class="text-4xl lg:text-5xl">earable </span>
+          <span class="text-5xl lg:text-6xl">W</span
+          ><span class="text-4xl lg:text-5xl">orkshop </span>
+          <span class="text-5xl lg:text-6xl">2020</span>
+        </p>
       </div>
+      <div class="md:my-3 md:py-3">
+        <p class="md:text-lg lg:text-xl">2020年12月12日（土） – 12日(日)</p>
+        <p class="md:text-lg lg:text-xl">
+          オンラインとオフラインのハイブリッド開催を予定
+        </p>
+        <p class="md:text-lg lg:text-xl">
+          ※本ページに最新情報を掲載しますので適宜ご確認ください
+        </p>
+      </div>
+    </Hero>
+    <div class="container text-center mx-auto">
+      <div>Clean up codes!</div>
     </div>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
+import hero from '~/components/layouts/Hero.vue'
 
-export default Vue.extend({})
+export default Vue.extend({
+  components: {
+    hero,
+  },
+})
 </script>
 
-<style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-@apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-</style>
+<style></style>
