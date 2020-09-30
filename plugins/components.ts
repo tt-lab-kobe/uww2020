@@ -2,7 +2,7 @@ import Vue from 'vue'
 
 // Importer
 import Navbar from '~/components/layouts/Navbar.vue'
-import Hero from '~/components/layouts/Hero.vuw'
+import Hero from '~/components/layouts/Hero.vue'
 
 import Box from '~/components/ui/Box.vue'
 import HLg from '~/components/ui/HLg.vue'
@@ -11,6 +11,7 @@ import TextBlock from '~/components/ui/TextBlock.vue'
 
 // Register
 Vue.component('Navbar', Navbar)
+Vue.component('Hero', Hero)
 
 Vue.component('Box', Box)
 Vue.component('Content', Content)
