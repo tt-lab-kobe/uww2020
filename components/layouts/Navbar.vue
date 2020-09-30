@@ -49,12 +49,7 @@
           xmlns:xlink="http://www.w3.org/1999/xlink"
           xml:space="preserve"
           xmlns:serif="http://www.serif.com/"
-          style="
-            fill-rule: evenodd;
-            clip-rule: evenodd;
-            stroke-linecap: round;
-            stroke-linejoin: round;
-          "
+          style="max-height: 10em"
         >
           <rect
             x="1.5"

@@ -2,6 +2,7 @@ import Vue from 'vue'
 
 // Importer
 import Navbar from '~/components/layouts/Navbar.vue'
+import Footer from '~/components/layouts/Footer.vue'
 import Hero from '~/components/layouts/Hero.vue'
 
 import Box from '~/components/ui/Box.vue'
@@ -15,6 +16,7 @@ import HighLighter from '~/components/ui/HighLighter.vue'
 
 // Register
 Vue.component('Navbar', Navbar)
+Vue.component('Footer', Footer)
 Vue.component('Hero', Hero)
 
 Vue.component('Box', Box)
