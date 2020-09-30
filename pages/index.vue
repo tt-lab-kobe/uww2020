@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Hero :img-src="'/uww2020-topimage.jpg'" class="text-gray-100">
+    <Hero :img-src="addUrlPrefix('uww2020-topimage.jpg')" class="text-gray-100">
       <div>
         <p class="font-mono">
           <span class="text-5xl lg:text-6xl">U</span
@@ -113,7 +113,7 @@
               神戸大学大学院工学研究科 塚本・寺田研究室
             </p>
             <img
-              src="/tsukamototerada-logo.png"
+              :src="addUrlPrefix('tsukamototerada-logo.png')"
               class="mx-auto"
               style="max-height: 4em"
             />
@@ -123,7 +123,7 @@
               NPO法人ウェアラブルコンピュータ研究開発機構
             </p>
             <img
-              src="/teamtsukamoto-logo.png"
+              :src="addUrlPrefix('teamtsukamoto-logo.png')"
               class="mx-auto"
               style="max-height: 4em"
             />
@@ -227,6 +227,11 @@ export default Vue.extend({
         },
       ],
     }
+  },
+  methods: {
+    addUrlPrefix(url: string) {
+      return this.$router.options.base + url
+    },
   },
 })
 </script>
