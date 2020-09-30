@@ -2,6 +2,7 @@ import Vue from 'vue'
 
 // Importer
 import Navbar from '~/components/layouts/Navbar.vue'
+import Hero from '~/components/layouts/Hero.vuw'
 
 import Box from '~/components/ui/Box.vue'
 import HLg from '~/components/ui/HLg.vue'

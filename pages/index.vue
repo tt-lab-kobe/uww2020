@@ -58,13 +58,8 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import hero from '~/components/layouts/Hero.vue'
 
-export default Vue.extend({
-  components: {
-    hero,
-  },
-})
+export default Vue.extend({})
 </script>
 
 <style></style>
