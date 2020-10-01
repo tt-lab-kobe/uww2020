@@ -2,17 +2,17 @@
   <div>
     <Hero :img-src="addUrlPrefix('uww2020-topimage.jpg')" class="text-gray-100">
       <div>
-        <p class="font-mono">
-          <span class="text-5xl lg:text-6xl">U</span
-          ><span class="text-4xl lg:text-5xl">biquitous </span>
-          <span class="text-5xl lg:text-6xl">W</span
-          ><span class="text-4xl lg:text-5xl">earable </span>
-          <span class="text-5xl lg:text-6xl">W</span
-          ><span class="text-4xl lg:text-5xl">orkshop </span>
-          <span class="text-5xl lg:text-6xl">2020</span>
+        <p class="head-font">
+          <span class="text-4xl lg:text-5xl">U</span
+          ><span class="text-3xl lg:text-4xl">biquitous </span>
+          <span class="text-4xl lg:text-5xl">W</span
+          ><span class="text-3xl lg:text-4xl">earable </span>
+          <span class="text-4xl lg:text-5xl">W</span
+          ><span class="text-3xl lg:text-4xl">orkshop </span>
+          <span class="text-4xl lg:text-5xl">2020</span>
         </p>
       </div>
-      <div class="md:my-3 md:py-3">
+      <div class="m-0 p-0 md:my-3 md:py-3">
         <p class="md:text-lg lg:text-xl">2020年12月12日（土）- 13日（日）</p>
         <p class="md:text-lg lg:text-xl">@神戸大学百年記念館 六甲ホール</p>
         <p class="md:text-lg lg:text-xl">
@@ -33,7 +33,7 @@
           <TextBlock>
             これまで現地での開催を行ってきましたが、本年度は新型コロナウイルス
             (SARS-CoV-2)
-            の状況を踏まえまして、オンライン開催、もしくは、オンラインとオンサイトのハイブリッド開催を予定しております。下記の通りの企画をしておりますので、是非ご参加いただけますようお願い致します。
+            の状況を踏まえまして、オンライン開催、もしくは、オンラインとオフラインのハイブリッド開催を予定しております。下記の通りの企画をしておりますので、是非ご参加いただけますようお願い致します。
           </TextBlock>
         </Content>
         <Content class="w-full md:w-1/2 px-3">
@@ -46,7 +46,7 @@
                 <li>参加者間の交流を目指したワークショップ</li>
                 <li>
                   実践的な情報処理技術に関する特別企画などを含んだ
-                  「夜のディスカッション」
+                  「ナイトセッション」
                 </li>
               </ul>
             </HighLighter>
@@ -54,7 +54,7 @@
         </Content>
       </Box>
       <Box class="flex flex-wrap">
-        <Content class="md:w-1/3">
+        <Content class="md:w-1/2">
           <HLg>Updates</HLg>
           <TextBlock
             class="border-solid border border-gray-400 my-2"
@@ -67,8 +67,8 @@
             </ul>
           </TextBlock>
         </Content>
-        <Content class="md:w-1/3">
-          <HLg>Deadline</HLg>
+        <Content class="md:w-1/2">
+          <HLg>Deadlines</HLg>
           <TextBlock style="min-height: 5em">
             <ColorList :items="deadlines"></ColorList>
           </TextBlock>
@@ -78,9 +78,42 @@
           <TextBlock>
             <HighLighter>
               <p class="text-2xl px-2 py-1 text-center">無料（予定）</p>
-              <p class="text-center">ハイブリッド開催のため</p>
             </HighLighter>
           </TextBlock>
+        </Content>
+        <Content class="md:w-1/3">
+          <HLg>Registration</HLg>
+          <TextBox>
+            <div class="text-center">
+              <p>
+                <GradientButton :disabled="true" class="my-2"
+                  >参加登録</GradientButton
+                >
+              </p>
+              <p>
+                <GradientButton :disabled="true" class="my-2"
+                  >原稿提出</GradientButton
+                >
+              </p>
+            </div>
+          </TextBox>
+        </Content>
+        <Content class="md:w-1/3">
+          <HLg>Download</HLg>
+          <TextBox>
+            <div class="text-center">
+              <p>
+                <GradientButton :disabled="true" class="my-2"
+                  >テンプレート（LaTeX）</GradientButton
+                >
+              </p>
+              <p>
+                <GradientButton :disabled="true" class="my-2"
+                  >テンプレート（Word）</GradientButton
+                >
+              </p>
+            </div>
+          </TextBox>
         </Content>
         <Content class="flex-auto md:w-1/2">
           <HLg>Schedule</HLg>
@@ -107,7 +140,7 @@
           </TextBlock>
         </Content>
         <Content class="w-full flex flex-wrap">
-          <HLg class="flex-none text-center w-full">Sponsor</HLg>
+          <HLg class="flex-none text-center w-full">Sponsors</HLg>
           <div class="w-full md:w-1/2 p-4">
             <p class="text-center p-2">
               神戸大学大学院工学研究科 塚本・寺田研究室
@@ -142,6 +175,7 @@ import Vue from 'vue'
 import Content from '~/components/ui/Content.vue'
 import HighLighter from '~/components/ui/HighLighter.vue'
 import TextBlock from '~/components/ui/TextBlock.vue'
+import GradientButton from '~/components/ui/GradientButton.vue'
 
 export default Vue.extend({
   data() {

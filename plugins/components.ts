@@ -13,6 +13,7 @@ import TextBlock from '~/components/ui/TextBlock.vue'
 import Budge from '~/components/ui/Budge.vue'
 import ColorList from '~/components/ui/ColorList.vue'
 import HighLighter from '~/components/ui/HighLighter.vue'
+import GradientButton from '~/components/ui/GradientButton.vue'
 
 // Register
 Vue.component('Navbar', Navbar)
@@ -27,3 +28,4 @@ Vue.component('TextBlock', TextBlock)
 Vue.component('Budge', Budge)
 Vue.component('ColorList', ColorList)
 Vue.component('HighLighter', HighLighter)
+Vue.component('GradientButton', GradientButton)
