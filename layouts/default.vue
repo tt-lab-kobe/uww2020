@@ -18,7 +18,16 @@
         </div>
       </div>
       <div class="text-center bg-gray-400 mt-3 py-3">
-        (c) Tsukamoto Terada Lab.
+        <p>© Tsukamoto Terada Lab.</p>
+        <p>
+          Contribute to this page on
+          <a
+            href="https://github.com/tt-lab-kobe/uww2020"
+            class="text-orange-700 hover:text-orange-600"
+          >
+            GitHub
+          </a>
+        </p>
       </div>
     </Footer>
   </div>
