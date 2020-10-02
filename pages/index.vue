@@ -1,6 +1,9 @@
 <template>
   <div>
-    <Hero :img-src="addUrlPrefix('uww2020-topimage.jpg')" class="text-gray-100">
+    <Hero
+      :img-src="addUrlPrefix('uww2020-topimage.jpg')"
+      class="text-gray-100 text-shadow"
+    >
       <div>
         <p class="head-font">
           <span class="text-4xl lg:text-5xl">U</span

@@ -17,7 +17,13 @@ module.exports = {
         'sans-serif',
       ],
     },
+    textShadow: {
+      default: '1px 1px 2px rgba(0, 0, 0, 1)',
+    },
   },
-  variants: {},
-  plugins: [],
+  variants: {
+    // tailwindcss-typography
+    textShadow: ['responsive'],
+  },
+  plugins: [require('tailwindcss-typography')()],
 }
