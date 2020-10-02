@@ -15,7 +15,7 @@
           <span class="text-4xl lg:text-5xl">2020</span>
         </p>
       </div>
-      <div class="m-0 p-0 md:my-3 md:py-3">
+      <div class="m-0 p-0 lg:my-3 lg:py-3">
         <p class="md:text-lg lg:text-xl">2020年12月12日（土）- 13日（日）</p>
         <p class="md:text-lg lg:text-xl">@神戸大学百年記念館 六甲ホール</p>
         <p class="md:text-lg lg:text-xl">
@@ -80,7 +80,7 @@
           <HLg>Registration fee</HLg>
           <TextBlock>
             <HighLighter>
-              <p class="text-2xl px-2 py-1 text-center">無料（予定）</p>
+              <p class="text-2xl px-2 py-4 text-center">無料（予定）</p>
             </HighLighter>
           </TextBlock>
         </Content>
