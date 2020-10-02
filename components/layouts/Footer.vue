@@ -1,7 +1,10 @@
 <template>
   <div>
     <div class="block bg-gray-400 my-2 p-4">
-      <p class="text-center">{{ contact }}</p>
+      <p class="text-center">
+        <font-awesome-icon :icon="['fas', 'envelope']" class="mr-2" />
+        {{ contact }}
+      </p>
     </div>
     <div class="mx-auto">
       <slot></slot>

@@ -59,10 +59,23 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    'nuxt-fontawesome',
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},
+
+  /*
+   ** FontAwesome
+   */
+  fontawesome: {
+    imports: [
+      {
+        set: '@fortawesome/free-solid-svg-icons',
+        icons: ['faEnvelope'],
+      },
+    ],
+  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
