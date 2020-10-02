@@ -1,9 +1,11 @@
 <template>
   <div>
     <div class="block bg-gray-400 my-2 p-4">
-      <p class="text-center">uww2020_org"at"ubi.eedept.kobe-u.ac.jp</p>
+      <p class="text-center">{{ contact }}</p>
     </div>
-    <div></div>
+    <div class="mx-auto">
+      <slot></slot>
+    </div>
   </div>
 </template>
 
@@ -11,6 +13,12 @@
 import Vue from 'vue'
 export default Vue.extend({
   name: 'Footer',
+  props: {
+    contact: {
+      type: String,
+      default: '',
+    },
+  },
 })
 </script>
 
