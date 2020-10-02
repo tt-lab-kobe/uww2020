@@ -175,10 +175,6 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import Content from '~/components/ui/Content.vue'
-import HighLighter from '~/components/ui/HighLighter.vue'
-import TextBlock from '~/components/ui/TextBlock.vue'
-import GradientButton from '~/components/ui/GradientButton.vue'
 
 export default Vue.extend({
   data() {
