@@ -3,9 +3,11 @@
     <Navbar :links="navLinks" />
     <Nuxt />
     <Footer :contact="'uww2020_org [at] ubi.eedept.kobe-u.ac.jp'">
-      <div>
+      <div class="container">
         <HMd>Link</HMd>
-        <div class="grid grid-cols-2 grid-rows-7 sm:grid-cols-4 sm:grid-rows-4">
+        <div
+          class="grid grid-cols-3 grid-rows-5 sm:grid-cols-4 sm:grid-rows-4 grid-flow-col grid-flow-col"
+        >
           <div
             v-for="(link, i) in pastLinks"
             :key="i"
