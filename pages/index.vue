@@ -87,7 +87,7 @@
         </Content>
         <Content class="md:w-1/3">
           <HLg>Registration</HLg>
-          <TextBox>
+          <TextBlock>
             <div class="text-center">
               <p>
                 <GradientButton class="my-2">
@@ -100,11 +100,11 @@
                 </GradientButton>
               </p>
             </div>
-          </TextBox>
+          </TextBlock>
         </Content>
         <Content class="md:w-1/3">
           <HLg>Download</HLg>
-          <TextBox>
+          <TextBlock>
             <div class="text-center">
               <p>
                 <GradientButton :disabled="true" class="my-2"
@@ -117,7 +117,7 @@
                 >
               </p>
             </div>
-          </TextBox>
+          </TextBlock>
         </Content>
         <Content class="flex-auto md:w-1/2">
           <HLg>Schedule</HLg>
