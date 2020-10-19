@@ -61,11 +61,12 @@
           <HLg>Updates</HLg>
           <TextBlock
             class="border-solid border border-gray-400 my-2"
-            style="min-height: 5em"
+            style="height: 5em; overflow: scroll"
           >
             <ul class="px-3">
-              <li>
-                <Budge>2020-10-01</Budge>UWW2020のサイトをオープンしました。
+              <li v-for="(news, index) in updates" :key="index" class="pb-1">
+                <Budge>{{ news.date }}</Budge>
+                <span>{{ news.description }}</span>
               </li>
             </ul>
           </TextBlock>
@@ -89,14 +90,14 @@
           <TextBox>
             <div class="text-center">
               <p>
-                <GradientButton :disabled="true" class="my-2"
-                  >参加登録</GradientButton
-                >
+                <GradientButton class="my-2">
+                  <a href="./reg/">参加登録</a>
+                </GradientButton>
               </p>
               <p>
-                <GradientButton :disabled="true" class="my-2"
-                  >原稿提出</GradientButton
-                >
+                <GradientButton class="my-2">
+                  <a href="./reg/login.php">原稿提出</a>
+                </GradientButton>
               </p>
             </div>
           </TextBox>
@@ -179,6 +180,16 @@ import Vue from 'vue'
 export default Vue.extend({
   data() {
     return {
+      updates: [
+        {
+          date: '2020-10-19',
+          description: '参加登録ページをオープンしました。',
+        },
+        {
+          date: '2020-10-01',
+          description: 'UWW2020のサイトをオープンしました。',
+        },
+      ],
       deadlines: [
         {
           header: '参加申込',
