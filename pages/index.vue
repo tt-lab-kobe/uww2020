@@ -107,14 +107,14 @@
           <TextBlock>
             <div class="text-center">
               <p>
-                <GradientButton :disabled="true" class="my-2"
-                  >テンプレート（LaTeX）</GradientButton
-                >
+                <GradientButton class="my-2">
+                  <a :href="addUrlPrefix('UWW2020_Format_LaTeX.zip')">テンプレート（LaTeX）</a>
+                </GradientButton>
               </p>
               <p>
-                <GradientButton :disabled="true" class="my-2"
-                  >テンプレート（Word）</GradientButton
-                >
+                <GradientButton class="my-2">
+                  <a :href="addUrlPrefix('word_UWW2020.docx')">テンプレート（Word）</a>
+                </GradientButton>
               </p>
             </div>
           </TextBlock>
@@ -181,6 +181,10 @@ export default Vue.extend({
   data() {
     return {
       updates: [
+        {
+          date: '2020-11-05',
+          description: '原稿テンプレートを公開しました。',
+        },
         {
           date: '2020-10-19',
           description: '参加登録ページをオープンしました。',
