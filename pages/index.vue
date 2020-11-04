@@ -60,7 +60,7 @@
         <Content class="md:w-1/2">
           <HLg>Updates</HLg>
           <TextBlock
-            class="border-solid border border-gray-400 my-2"
+            class="border-solid border border-gray-400 my-2 scrollbarless"
             style="height: 5em; overflow: scroll"
           >
             <ul class="px-3">
@@ -284,4 +284,13 @@ export default Vue.extend({
 })
 </script>
 
-<style></style>
+<style>
+.scrollbarless {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.scrollbarless::-webkit-scrollbar {
+    display:none;
+}
+</style>
