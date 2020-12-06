@@ -129,7 +129,7 @@ export default {
     imports: [
       {
         set: '@fortawesome/free-solid-svg-icons',
-        icons: ['faEnvelope'],
+        icons: ['faEnvelope', 'faSearch', 'faUser'],
       },
     ],
   },
