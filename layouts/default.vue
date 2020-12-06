@@ -42,7 +42,7 @@ export default Vue.extend({
       navLinks: [
         { title: 'Home', path: '/' },
         { title: 'Access', path: '' },
-        { title: 'Program', path: '' },
+        { title: 'Program', path: '/program' },
       ],
       pastLinks: [
         {
