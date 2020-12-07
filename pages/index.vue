@@ -81,7 +81,7 @@
           <HLg>Registration fee</HLg>
           <TextBlock>
             <HighLighter>
-              <p class="text-2xl px-2 py-4 text-center">無料（予定）</p>
+              <p class="text-2xl px-2 py-4 text-center">無料</p>
             </HighLighter>
           </TextBlock>
         </Content>
@@ -186,6 +186,11 @@ export default Vue.extend({
     return {
       updates: [
         {
+          date: '2020-12-07',
+          description:
+            'プログラムの詳細を公開しました。ナビゲーションバーよりお進みください。',
+        },
+        {
           date: '2020-11-05',
           description: '原稿テンプレートを公開しました。',
         },
@@ -224,7 +229,7 @@ export default Vue.extend({
       ],
       day2: [
         {
-          header: '9:00 – ',
+          header: '8:30 – ',
           description: '受付開始',
         },
         {
