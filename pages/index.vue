@@ -108,12 +108,16 @@
             <div class="text-center">
               <p>
                 <GradientButton class="my-2">
-                  <a :href="addUrlPrefix('UWW2020_Format_LaTeX.zip')">テンプレート（LaTeX）</a>
+                  <a :href="addUrlPrefix('UWW2020_Format_LaTeX.zip')">
+                    テンプレート（LaTeX）
+                  </a>
                 </GradientButton>
               </p>
               <p>
                 <GradientButton class="my-2">
-                  <a :href="addUrlPrefix('word_UWW2020.docx')">テンプレート（Word）</a>
+                  <a :href="addUrlPrefix('word_UWW2020.docx')">
+                    テンプレート（Word）
+                  </a>
                 </GradientButton>
               </p>
             </div>
@@ -286,11 +290,11 @@ export default Vue.extend({
 
 <style>
 .scrollbarless {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .scrollbarless::-webkit-scrollbar {
-    display:none;
+  display: none;
 }
 </style>

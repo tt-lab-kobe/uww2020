@@ -6,7 +6,7 @@
       <div class="container">
         <HMd>Link</HMd>
         <div
-          class="grid grid-cols-3 grid-rows-5 sm:grid-cols-4 sm:grid-rows-4 grid-flow-col grid-flow-col"
+          class="grid grid-cols-3 grid-rows-5 sm:grid-cols-4 sm:grid-rows-4 grid-flow-col"
         >
           <div
             v-for="(link, i) in pastLinks"
