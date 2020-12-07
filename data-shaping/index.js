@@ -2,6 +2,7 @@ const fs = require('fs')
 const getCSV = require('./getCsv.js')
 const csv = getCSV('uww2020.csv')
 csv.shift()
+csv.push(['', '', '', '', '', '', '', '', '', '', '', '', '', '', ''])
 const program = []
 
 let preSeesionId = '0'
