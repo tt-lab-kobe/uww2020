@@ -22,7 +22,7 @@
           <TextBlock v-if="session.sessionId === '1'" class="w-full">
             <HMd>{{ session.date }}</HMd>
           </TextBlock>
-          <TextBlock v-if="session.sessionId === '14'" class="w-full">
+          <TextBlock v-if="session.sessionId === '15'" class="w-full">
             <HMd>{{ session.date }}</HMd>
           </TextBlock>
           <TextBlock
