@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "csv-parse": "^4.14.1"
+  },
+  "scripts": {
+    "conv": "node index.js"
+  },
+  "name": "_tmp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT"
+}
