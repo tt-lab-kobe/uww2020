@@ -219,11 +219,11 @@ export default Vue.extend({
           description: 'オープニング',
         },
         {
-          header: '10:15 – 17:00',
+          header: '10:15 – 17:35',
           description: '口頭発表セッション（途中休憩あり）',
         },
         {
-          header: '19:00 – 21:00',
+          header: '20:00 – 22:00',
           description: 'ナイトセッション',
         },
       ],
@@ -233,11 +233,11 @@ export default Vue.extend({
           description: '受付開始',
         },
         {
-          header: '10:15 – 17:00',
+          header: '10:00 – 17:30',
           description: '口頭発表セッション（途中休憩あり）',
         },
         {
-          header: '17:00 – 17:15',
+          header: '17:30 – 17:45',
           description: '表彰・クロージング',
         },
       ],

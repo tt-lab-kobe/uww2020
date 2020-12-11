@@ -12,10 +12,11 @@
             class="p-1 w-4/5"
           />
         </Content>
-        <!-- <Content>
+        <Content>
           <font-awesome-icon :icon="['fas', 'user']" />
           <span>: 発表者</span>
-        </Content> -->
+        </Content>
+        <Content>発表時間：10分（目安：7分発表+3分質疑）</Content>
       </Box>
       <Box>
         <Content v-for="session in queryFilter" :key="session.sessionId">
@@ -41,9 +42,9 @@
               </HLg>
             </TextBlock>
             <Box v-if="session.hasPresentation" class="md:mx-6 md:px-6">
-              <!-- <div class="mb-3 text-center">
-                座長: {{ session.chairperson }}
-              </div> -->
+              <div class="mb-3 text-center">
+                座長: {{ session.chairPerson }}
+              </div>
               <Content>
                 <ul style="list-style: disc" class="md:mx-6 md:px-6 px-3">
                   <li
@@ -52,6 +53,9 @@
                   >
                     <TextBlock class="mb-0 text-lg text-center">
                       {{ presentation.title }}
+                    </TextBlock>
+                    <TextBlock class="md:ml-1 text-sm">
+                      {{ presentation.authors }}
                     </TextBlock>
                     <TextBlock>
                       <font-awesome-icon :icon="['fas', 'user']" class="mr-2" />
@@ -65,13 +69,6 @@
           </TextBlock>
         </Content>
       </Box>
-      <!-- <Box class="flex flex-wrap">
-        <Content class="w-full px-3">
-          <TextBlock>
-            ユビキタス・ウェアラブル技術の発展はめざましく、これらの技術に関する研究開発が活発に行われています。神戸大学塚本・寺田研究室およびNPO法人ウェアラブルコンピュータ研究開発機構では、ユビキタス・ウェアラブルワークショップを2007年以来毎年開催し、今年は14回目となります。昨年はユビキタス・ウェアラブル技術に関する70件の密度の濃い発表と議論を行いました。
-          </TextBlock>
-        </Content>
-      </Box> -->
     </div>
   </div>
 </template>
@@ -104,13 +101,9 @@ export default Vue.extend({
           if (filteredList[index].hasPresentation) {
             const queryResults = filteredList[index].presentations.filter(
               (presentation: any) => {
-                // return (
-                //   presentation.title.includes(query) ||
-                //   presentation.authors.includes(query)
-                // )
                 return (
                   presentation.title.includes(query) ||
-                  presentation.speaker.includes(query)
+                  presentation.authors.includes(query)
                 )
               }
             )
