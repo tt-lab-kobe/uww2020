@@ -120,6 +120,13 @@
                   </a>
                 </GradientButton>
               </p>
+              <p>
+                <GradientButton class="my-2">
+                  <a :href="addUrlPrefix('UWW2020_Proc.pdf.pdf')">
+                    プロシーディングス
+                  </a>
+                </GradientButton>
+              </p>
             </div>
           </TextBlock>
         </Content>
@@ -185,6 +192,11 @@ export default Vue.extend({
   data() {
     return {
       updates: [
+        {
+          date: '2020-12-12',
+          description:
+            'プロシーディングスを公開しました。',
+        },
         {
           date: '2020-12-07',
           description:
